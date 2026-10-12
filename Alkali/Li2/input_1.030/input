@@ -1,0 +1,37 @@
+    1
+    3
+    12
+    1
+    2
+    2
+12    12
+1.14e1 0.1
+1.04   1.04
+0.000000E+000    0.000000E+000    50   50
+2000.d0
+0.002
+
+$para1    eup=-687     edown= -687     uu= 5000.d0
+              gx1=1.5d0        $end
+
+$converge    maxit0=10000    crit= 1.00E-007    $end
+
+$guess0    lbzman=T    $end
+
+$jobinfo    lsparse=.true.    psdfff=F    itype_fff=3    lscreen=T    $end
+
+
+$field    fieldtype=3    lreadomega=T    leshift_dc=T    lphase=T    $end
+  -1.5450000d0 -1.5450000d0 -1.5450000d0 -1.5450000d0
+0.d0    0.d0    50    50
+0.d0    0.d0    0.d0    0.d0
+pulsed_energy_shift  2  1
+0.d0    2000.d0     30
+
+$resume    lresume=    T    nresume=    400000     icont=0    $end
+
+$bathcorr    lspcor=    T    $end
+1.14e1 1.14e1
+0.1   1.9
+
+$project    lproj=T    nproji=1    nprojf=3    $end

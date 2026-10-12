@@ -1,0 +1,4 @@
+tail_N = 100000
+total_valleys = 69
+used_valleys = 67  # removed first & last
+Iaver_valleys = 0.17350832835820895
